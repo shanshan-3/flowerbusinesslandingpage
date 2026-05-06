@@ -1,13 +1,146 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cherry Blooms Bouquet</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="favicon.jpeg" rel="icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,600;9..144,700&family=Manrope:wght@300;400;600&display=swap"
+        rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
 </head>
+
 <body>
-    <link href="navbar.html" rel="import">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <header class="site-header" id="home">
+        <nav class="nav">
+            <a class="brand" href="#home">Cherry Blooms Bouquet</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#clients">Past Clients</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Hand-tied with love</p>
+                <div class="hero-title">
+                    <h1>Handmade
+                        <br>
+                        <em>Bouquets</em>
+                        <br>
+                        for You
+                    </h1>
+                </div>
+                <p class="lead">
+                    We design and sell custom bouquets for weddings, birthdays, anniversaries, and every moment in
+                    between.
+                </p>
+                <div class="hero-cta">
+                    <a class="btn" href="#products">View bouquets</a>
+                    <a class="btn ghost" href="#contact">Custom Order</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=1200&auto=format&fit=crop"
+                    alt="Handmade bouquet of pastel flowers" />
+            </div>
+        </div>
+    </header>
+    <!-- Products Section -->
+    <main>
+        <section class="section" id="products">
+            <div class="section-head">
+                <div class="section-head-text">
+                    <h2>Products</h2>
+                    <p>More products available upon request</p>
+                </div>
+                <div class="section-cta">
+                    <a class="link-pill" href="https://www.facebook.com" target="_blank" rel="noopener">View all →</a>
+                </div>
+            </div>
+            <div class="image-grid">
+                <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=900&auto=format&fit=crop"
+                    alt="Bouquet in peach tones" />
+                <img src="https://images.unsplash.com/photo-1526040652367-ac003a0475fe?q=80&w=900&auto=format&fit=crop"
+                    alt="Wildflower bouquet" />
+                <img src="https://images.unsplash.com/photo-1519378058457-4c29a0a2ef67?q=80&w=900&auto=format&fit=crop"
+                    alt="Bouquet with roses and greenery" />
+                <img src="https://images.unsplash.com/photo-1504198458649-3128b932f49b?q=80&w=900&auto=format&fit=crop"
+                    alt="Neutral bouquet" />
+                <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?q=80&w=900&auto=format&fit=crop"
+                    alt="Pink bouquet" />
+                <img src="https://images.unsplash.com/photo-1460039230329-eb070fc6c77c?q=80&w=900&auto=format&fit=crop"
+                    alt="Bright bouquet" />
+            </div>
+        </section>
+        <!-- Client Section -->
+        <section class="section alt" id="clients">
+            <div class="section-head">
+                <div class="section-head-text">
+                    <h2>Past Clients</h2>
+                    <p>Thank you for choosing us!</p>
+                </div>
+                <div class="section-cta">
+                    <a class="link-pill" href="https://www.facebook.com" target="_blank" rel="noopener">View all →</a>
+                </div>
+            </div>
+            <div class="image-grid">
+                <img src="https://images.unsplash.com/photo-1500673922987-e212871fec22?q=80&w=900&auto=format&fit=crop"
+                    alt="Wedding bouquet" />
+                <img src="https://images.unsplash.com/photo-1524591717884-8e3c0b8f1973?q=80&w=900&auto=format&fit=crop"
+                    alt="Bridal bouquet" />
+                <img src="https://images.unsplash.com/photo-1505575967455-40e256f73376?q=80&w=900&auto=format&fit=crop"
+                    alt="Event flowers" />
+                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=900&auto=format&fit=crop"
+                    alt="Anniversary bouquet" />
+                <img src="https://images.unsplash.com/photo-1457089328109-e5d9bd499191?q=80&w=900&auto=format&fit=crop"
+                    alt="Birthday bouquet" />
+                <img src="https://images.unsplash.com/photo-1469259943454-aa100abba749?q=80&w=900&auto=format&fit=crop"
+                    alt="Celebration bouquet" />
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="section-label">Get in Touch</div>
+            <h2 class="section-title" style="margin-bottom: 48px;">Let's Create Something <em>Beautiful</em></h2>
+
+            <div class="contact-grid reveal">
+                <div class="contact-main">
+                    <div class="section-label">Reach Us</div>
+                    <h2>Open for <em>Custom Orders</em></h2>
+                    <p>Have something special in mind? We'd love to bring your floral vision to life. Reach out through
+                        any of the channels below.</p>
+                    <div class="contact-links">
+                        <a class="contact-link" href="https://www.facebook.com" target="_blank" rel="noopener">
+                            <div class="contact-link-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                                </svg>
+                            </div>
+                            <span>Facebook — Cherry Blooms Bouquet</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-aside">
+                    <div class="info-card">
+                        <div class="info-tag">Fully Custom</div>
+                        <h4>Design Your Own</h4>
+                        <p>Choose your flowers, colors, and style. We'll craft something uniquely yours.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>Homemade Bouquets. Crafted with love, delivered with care.</p>
+    </footer>
 </body>
+
 </html>
