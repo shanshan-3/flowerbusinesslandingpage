@@ -18,7 +18,12 @@
     <header class="site-header" id="home">
         <nav class="nav">
             <a class="brand" href="#home">Cherry Blooms Bouquet</a>
-            <div class="nav-links">
+            <button class="hamburger" aria-label="Toggle navigation" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <div class="nav-links" id="nav-links">
                 <a href="#home">Home</a>
                 <a href="#products">Products</a>
                 <a href="#clients">Past Clients</a>
@@ -41,13 +46,12 @@
                     between.
                 </p>
                 <div class="hero-cta">
-                    <a class="btn" href="#products">View bouquets</a>
+                    <a class="btn" href="#bouquets">View bouquets</a>
                     <a class="btn ghost" href="#contact">Custom Order</a>
                 </div>
             </div>
             <div class="hero-card">
-                <img src="img/home.jpg"
-                    alt="Handmade bouquet" />
+                <img src="img/home.jpg" alt="Handmade bouquet" />
             </div>
         </div>
     </header>
@@ -57,10 +61,11 @@
             <div class="section-head">
                 <div class="section-head-text">
                     <h2>Products</h2>
-                    <p>More products available upon request</p>
+                    <p>More bouquets available upon request</p>
                 </div>
                 <div class="section-cta">
-                    <a class="link-pill" href="https://www.facebook.com" target="_blank" rel="noopener">View all →</a>
+                    <a class="link-pill" href="https://www.facebook.com/profile.php?id=61565700505849" target="_blank"
+                        rel="noopener">Find more →</a>
                 </div>
             </div>
             <div class="image-grid">
@@ -86,7 +91,8 @@
                     <p>Thank you for choosing us!</p>
                 </div>
                 <div class="section-cta">
-                    <a class="link-pill" href="https://www.facebook.com" target="_blank" rel="noopener">View all →</a>
+                    <a class="link-pill" href="https://www.facebook.com/profile.php?id=61565700505849" target="_blank"
+                        rel="noopener">Find more →</a>
                 </div>
             </div>
             <div class="image-grid">
@@ -114,9 +120,10 @@
                     <div class="section-label">Reach Us</div>
                     <h2>Open for <em>Custom Orders</em></h2>
                     <p>Have something special in mind? We'd love to bring your floral vision to life. Reach out through
-                        any of the channels below.</p>
+                        the channels below.</p>
                     <div class="contact-links">
-                        <a class="contact-link" href="https://www.facebook.com" target="_blank" rel="noopener">
+                        <a class="contact-link" href="https://www.facebook.com/profile.php?id=61565700505849"
+                            target="_blank" rel="noopener">
                             <div class="contact-link-icon">
                                 <svg viewBox="0 0 24 24">
                                     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
@@ -141,6 +148,7 @@
     <footer class="site-footer">
         <p>Homemade Bouquets. Crafted with love, delivered with care.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

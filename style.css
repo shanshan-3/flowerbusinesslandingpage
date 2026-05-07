@@ -17,7 +17,7 @@
 }
 
 body {
-    font-family: "Manrope", "Segoe UI", sans-serif;
+    font-family: "Manrope", "Segoe UI", "Noto Serif", sans-serif;
     color: var(--ink);
     background: radial-gradient(circle at top,
             #fff6ef 0%,
@@ -204,8 +204,8 @@ a {
     padding: 6px 0;
     border-radius: 0;
     border: 0;
-    color: var(--forest);
-    font-weight: 500;
+    color: black;
+    font-weight: 600;
     font-size: 0.88rem;
     letter-spacing: 0.14em;
     text-transform: uppercase;
@@ -342,13 +342,43 @@ a {
     }
 
     .nav {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        /* Allows nav-links to drop below */
     }
 
     .nav-links {
+        display: none;
+        flex-direction: column;
         width: 100%;
-        gap: 14px;
+        text-align: center;
+        gap: 0;
+        margin-top: 16px;
+        background: var(--cream);
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 24px rgba(31, 26, 22, 0.12);
+        animation: fadeUp 0.3s ease forwards;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 16px;
+        border-bottom: 1px solid rgba(48, 75, 58, 0.06);
+        border-radius: 0;
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+
+    .nav-links a:hover {
+        background: rgba(48, 75, 58, 0.04);
     }
 
     .hero-cta {
@@ -477,7 +507,7 @@ a {
     display: flex;
     align-items: center;
     gap: 14px;
-    padding: 16px 20px;
+    padding: 10px 20px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -578,5 +608,42 @@ a {
 
     .contact-link {
         padding: 14px 16px;
+    }
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 8px;
+    z-index: 100;
+}
+
+.hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--forest);
+    border-radius: 2px;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 600px) {
+    .hamburger {
+        display: block;
     }
 }
