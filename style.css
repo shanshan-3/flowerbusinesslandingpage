@@ -149,8 +149,10 @@ a {
 }
 
 .hero-card {
-    width: 450px;
-    height: 520px;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    aspect-ratio: 45 / 52;
     border-radius: 28px;
     overflow: hidden;
     box-shadow: var(--shadow);
