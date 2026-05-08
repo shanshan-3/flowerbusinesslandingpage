@@ -4,21 +4,26 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Cherry Blooms Bouquet creates handmade custom bouquets for birthdays, weddings, anniversaries, graduations, and special gifts." />
     <title>Cherry Blooms Bouquet</title>
     <link href="favicon.jpeg" rel="icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,600;9..144,700&family=Manrope:wght@300;400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,600;9..144,700&family=Manrope:wght@300;400;600;700&display=swap"
         rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
 </head>
 
 <body>
+    <a class="skip-link" href="#products">Skip to content</a>
+
     <header class="site-header" id="home">
-        <nav class="nav">
+        <nav class="nav" aria-label="Primary navigation">
             <a class="brand" href="#home">Cherry Blooms Bouquet</a>
-            <button class="hamburger" aria-label="Toggle navigation" id="hamburger">
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links"
+                id="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -30,60 +35,71 @@
                 <a href="#contact">Contact Us</a>
             </div>
         </nav>
+
         <div class="hero">
             <div class="hero-copy">
                 <p class="eyebrow">Hand-tied with love</p>
-                <div class="hero-title">
-                    <h1>Handmade
-                        <br>
-                        <em>Bouquets</em>
-                        <br>
-                        for You
-                    </h1>
-                </div>
+                <h1>Handmade <em>Bouquets</em> for Every Sweet Moment</h1>
                 <p class="lead">
-                    We design and sell custom bouquets for weddings, birthdays, anniversaries, and every moment in
-                    between.
+                    We design and sell custom bouquets for weddings, birthdays, anniversaries, and every moment in between.
                 </p>
                 <div class="hero-cta">
-                    <a class="btn" href="#bouquets">View bouquets</a>
-                    <a class="btn ghost" href="#contact">Custom Order</a>
+                    <a class="btn" href="#products">View bouquets</a>
+                    <a class="btn ghost" href="#contact">Custom order</a>
                 </div>
             </div>
+
             <div class="hero-card">
-                <img src="img/home.jpg" alt="Handmade bouquet" />
+                <img src="img/home.jpg" alt="Handmade bouquet wrapped in pink paper" />
+                <div class="hero-note">
+                    <span>Made to order</span>
+                    <strong>Fresh, personal, and photo-ready.</strong>
+                </div>
             </div>
         </div>
     </header>
-    <!-- Products Section -->
+
     <main>
         <section class="section" id="products">
             <div class="section-head">
                 <div class="section-head-text">
                     <h2>Products</h2>
-                    <p>More bouquets available upon request</p>
+                    <p>More bouquets are available upon request.</p>
                 </div>
                 <div class="section-cta">
                     <a class="link-pill" href="https://www.facebook.com/profile.php?id=61565700505849" target="_blank"
-                        rel="noopener">Find more →</a>
+                        rel="noopener">Find more</a>
                 </div>
             </div>
+
             <div class="image-grid">
-                <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=900&auto=format&fit=crop"
-                    alt="Bouquet in peach tones" />
-                <img src="https://images.unsplash.com/photo-1526040652367-ac003a0475fe?q=80&w=900&auto=format&fit=crop"
-                    alt="Wildflower bouquet" />
-                <img src="https://images.unsplash.com/photo-1519378058457-4c29a0a2ef67?q=80&w=900&auto=format&fit=crop"
-                    alt="Bouquet with roses and greenery" />
-                <img src="https://images.unsplash.com/photo-1504198458649-3128b932f49b?q=80&w=900&auto=format&fit=crop"
-                    alt="Neutral bouquet" />
-                <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?q=80&w=900&auto=format&fit=crop"
-                    alt="Pink bouquet" />
-                <img src="https://images.unsplash.com/photo-1460039230329-eb070fc6c77c?q=80&w=900&auto=format&fit=crop"
-                    alt="Bright bouquet" />
+                <article class="bouquet-card">
+                    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=900&auto=format&fit=crop"
+                        alt="Bouquet in peach tones" />
+                </article>
+                <article class="bouquet-card">
+                    <img src="https://images.unsplash.com/photo-1526040652367-ac003a0475fe?q=80&w=900&auto=format&fit=crop"
+                        alt="Wildflower bouquet" />
+                </article>
+                <article class="bouquet-card">
+                    <img src="https://images.unsplash.com/photo-1519378058457-4c29a0a2ef67?q=80&w=900&auto=format&fit=crop"
+                        alt="Bouquet with roses and greenery" />
+                </article>
+                <article class="bouquet-card">
+                    <img src="https://images.unsplash.com/photo-1504198458649-3128b932f49b?q=80&w=900&auto=format&fit=crop"
+                        alt="Neutral bouquet" />
+                </article>
+                <article class="bouquet-card">
+                    <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?q=80&w=900&auto=format&fit=crop"
+                        alt="Pink bouquet" />
+                </article>
+                <article class="bouquet-card">
+                    <img src="https://images.unsplash.com/photo-1460039230329-eb070fc6c77c?q=80&w=900&auto=format&fit=crop"
+                        alt="Bright bouquet" />
+                </article>
             </div>
         </section>
-        <!-- Client Section -->
+
         <section class="section alt" id="clients">
             <div class="section-head">
                 <div class="section-head-text">
@@ -92,61 +108,76 @@
                 </div>
                 <div class="section-cta">
                     <a class="link-pill" href="https://www.facebook.com/profile.php?id=61565700505849" target="_blank"
-                        rel="noopener">Find more →</a>
+                        rel="noopener">Find more</a>
                 </div>
             </div>
+
             <div class="image-grid">
-                <img src="https://images.unsplash.com/photo-1500673922987-e212871fec22?q=80&w=900&auto=format&fit=crop"
-                    alt="Wedding bouquet" />
-                <img src="https://images.unsplash.com/photo-1524591717884-8e3c0b8f1973?q=80&w=900&auto=format&fit=crop"
-                    alt="Bridal bouquet" />
-                <img src="https://images.unsplash.com/photo-1505575967455-40e256f73376?q=80&w=900&auto=format&fit=crop"
-                    alt="Event flowers" />
-                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=900&auto=format&fit=crop"
-                    alt="Anniversary bouquet" />
-                <img src="https://images.unsplash.com/photo-1457089328109-e5d9bd499191?q=80&w=900&auto=format&fit=crop"
-                    alt="Birthday bouquet" />
-                <img src="https://images.unsplash.com/photo-1469259943454-aa100abba749?q=80&w=900&auto=format&fit=crop"
-                    alt="Celebration bouquet" />
+                <article class="bouquet-card client-card">
+                    <img src="https://images.unsplash.com/photo-1500673922987-e212871fec22?q=80&w=900&auto=format&fit=crop"
+                        alt="Wedding bouquet" />
+                </article>
+                <article class="bouquet-card client-card">
+                    <img src="https://images.unsplash.com/photo-1524591717884-8e3c0b8f1973?q=80&w=900&auto=format&fit=crop"
+                        alt="Bridal bouquet" />
+                </article>
+                <article class="bouquet-card client-card">
+                    <img src="https://images.unsplash.com/photo-1505575967455-40e256f73376?q=80&w=900&auto=format&fit=crop"
+                        alt="Event flowers" />
+                </article>
+                <article class="bouquet-card client-card">
+                    <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=900&auto=format&fit=crop"
+                        alt="Anniversary bouquet" />
+                </article>
+                <article class="bouquet-card client-card">
+                    <img src="https://images.unsplash.com/photo-1457089328109-e5d9bd499191?q=80&w=900&auto=format&fit=crop"
+                        alt="Birthday bouquet" />
+                </article>
+                <article class="bouquet-card client-card">
+                    <img src="https://images.unsplash.com/photo-1469259943454-aa100abba749?q=80&w=900&auto=format&fit=crop"
+                        alt="Celebration bouquet" />
+                </article>
             </div>
         </section>
-        <!-- Contact Section -->
+
         <section id="contact">
             <div class="section-label">Get in Touch</div>
-            <h2 class="section-title" style="margin-bottom: 48px;">Let's Create Something <em>Beautiful</em></h2>
+            <h2 class="section-title">Let's Create Something <em>Beautiful</em></h2>
 
-            <div class="contact-grid reveal">
+            <div class="contact-grid">
                 <div class="contact-main">
                     <div class="section-label">Reach Us</div>
                     <h2>Open for <em>Custom Orders</em></h2>
-                    <p>Have something special in mind? We'd love to bring your floral vision to life. Reach out through
-                        the channels below.</p>
+                    <p>
+                        Have something special in mind? Tell us the occasion, preferred colors, and bouquet style. We
+                        would love to bring your floral vision to life.
+                    </p>
                     <div class="contact-links">
                         <a class="contact-link" href="https://www.facebook.com/profile.php?id=61565700505849"
                             target="_blank" rel="noopener">
-                            <div class="contact-link-icon">
+                            <div class="contact-link-icon" aria-hidden="true">
                                 <svg viewBox="0 0 24 24">
                                     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                                 </svg>
                             </div>
-                            <span>Facebook — Cherry Blooms Bouquet</span>
+                            <span>Facebook - Cherry Blooms Bouquet</span>
                         </a>
                     </div>
                 </div>
+
                 <div class="contact-aside">
                     <div class="info-card">
                         <div class="info-tag">Fully Custom</div>
                         <h4>Design Your Own</h4>
-                        <p>Choose your flowers, colors, and style. We'll craft something uniquely yours.</p>
+                        <p>Choose your flowers, colors, and style. We will craft something uniquely yours.</p>
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer class="site-footer">
-        <p>Homemade Bouquets. Crafted with love, delivered with care.</p>
+        <p>Homemade bouquets, crafted with love and delivered with care.</p>
     </footer>
     <script src="script.js"></script>
 </body>
